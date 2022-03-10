@@ -1,0 +1,861 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+header{
+    width:100%;
+    height:100px;
+    background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+}
+#headSP{
+    float: left;
+    width:30%;
+    height:100px;
+    background-color: rgb(253, 34, 34);
+    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+}
+#headFimg{
+    width:130px;
+    height:100%;
+    border-radius: 50%;
+    margin:0px 50px;
+}
+#headFh{
+    float: right;
+    transform: translateX(-55px);
+    text-decoration: none;
+    color:white;
+    line-height: 100px;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    width:180px;
+    float: left;
+}
+nav li a{
+    text-decoration: none;
+    color:white;
+    padding: 0px 40px;
+    line-height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+#droplista{
+    background-color: grey;
+    position:absolute;
+    z-index: 1;
+    text-align: center;
+    display: none;
+    width:180px;
+}
+#droplista a{
+    display: block;
+    color:white;
+}
+nav li:hover{
+    background-color: rgb(253, 34, 34);
+}
+#lista:hover #droplista{
+    display:block;
+}
+#droplista a:hover{
+    background-color: rgb(253, 34, 34);
+}
+/*
+#inputSearch{
+    float: right;
+    position: relative;
+    right:76px;
+    top:27px;
+}
+#headFIP{
+    padding:12px;
+    background-color: rgb(80, 80, 80);
+    border:2px solid rgb(253, 34, 34);
+    outline:none;
+    border-radius: 8px 0px 0px 8px;
+    color:white;
+}
+#headFbtn{
+    border-radius: 0px 8px 8px 0px;
+    padding:14px;
+    color: white;
+    background-color: rgb(253, 34, 34);
+    border:none;
+    outline:none;
+    position:absolute;
+    right:-60px;
+}
+#headFbtn:hover{
+    cursor: pointer;
+    color:white;
+    background-color: rgb(255, 112, 112);
+}*/
+main{
+    border-top: 2px solid white;
+    background-image: linear-gradient(to left, rgb(163, 163, 163), rgb(194, 194, 194));
+    height:550px;
+    width:100%;
+    float:right;
+    position: relative;
+}
+aside{
+    float:left;
+    height:550px;
+    width:30%;
+    background-color: rgb(223, 221, 221);
+    border-right: 2px solid white;
+}
+aside img{
+    width:90%;
+    height:210px;
+    text-align: center;
+    margin: 20px;
+}
+aside h1{
+    text-align: center;
+    color:rgb(255, 236, 236);
+    padding: 20px;
+    border-bottom: 2px solid red;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 3px 6px red;
+}
+#asideFdiv{
+    width:100%;
+    height:60px;
+    position: relative;
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.Ph2{
+    width:120px;
+    color:white;
+    padding: 15px;
+    border: 3px solid white;
+    position: absolute;
+    left:130px;
+    background-color: rgb(253, 34, 34);
+    text-align: center;
+    cursor: context-menu;
+    animation-name: Colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes Colores{
+    from{
+        background-color: rgb(253, 34, 34);
+        color:black;
+        border: 3px solid black;
+    }
+    to{
+        background-color: black;
+        border: 3px solid rgb(253, 34, 34)
+    }
+}
+#Socialmedia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#Socialmedia img{
+    width:42px;
+    height:42px;
+    margin:0px;
+    padding:5px;
+    border-bottom: 2px double red;
+}
+#Socialmedia img:hover{
+    width:52px;
+    height:52px;
+}
+main article{
+    background-color: white;
+    position: absolute;
+    left: 700px;
+    top:130px;
+    width:480px;
+    height:240px;
+    padding:20px;
+    animation-name: articelcolors;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes articelcolors{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color:  rgb(224, 224, 224);
+    }
+    100%{
+        background-color: rgb(255, 242, 242);
+    }
+}
+article h1{
+    text-align: center;
+    padding:20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+}
+article p{
+    font-family: sans-serif;
+    font-size: 20.4px;
+    margin-top: 30px;
+    text-align: justify;
+    text-transform: capitalize;
+    padding: 18px 0px;
+    line-height: 40px; 
+}
+footer{
+    clear:both;
+    border-top: 2px solid white;
+    width:100%;
+    height:155px;
+    background-color:  rgb(223, 221, 221);
+    position: relative;
+}
+.footPh{
+    width:100%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 155px;
+    color:transparent;
+    cursor: context-menu;
+    -webkit-text-stroke-color:red;
+    -webkit-text-stroke-width:thin;
+}
+
+@media (min-width:1000px) and (max-width:1360px){
+    #headFimg{
+        width:100px;
+        margin:0px 20px;
+    }
+    #headFh{
+        transform: translateX(-35px);
+    }
+    nav li{
+        width:140px;
+    }
+    nav li a{
+        padding: 0px;
+    }
+    #droplista{
+        width:140px;
+    }
+    aside img{
+        margin: 20px 15px;
+    }
+    .Ph2{
+        left:85px;
+    }
+    #Socialmedia{
+        margin-top: 20px;
+    }
+    main article{
+        left: 430px;
+    }
+}
+@media (min-width:790px) and (max-width:1000px){
+    #headSP{
+        clip-path: none;
+    }
+    #headFimg{
+        width: 85px;
+        margin: 0px 14px;
+    }
+    #headFh{
+        width:20px;
+        transform: translateX(-110px);
+        font-size: 27px;
+    }
+    nav li{
+        width:135px;
+    }
+    .Qlista{
+        display:none;
+    }
+    nav li a{
+        padding: 0px;
+    }
+    #droplista{
+        width:135px;
+    }
+    nav li:hover{
+        background-color: red;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    #droplista a:hover{
+        background-color: red;
+    }
+    aside img{
+        margin: 20px 10px;
+    }
+    .Ph2{
+        left:50px;
+    }
+    #Socialmedia{
+        margin-top: 20px;
+    }
+    #Socialmedia img{
+        width:35px;
+        height:35px;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left:360px;
+        top:130px;
+        width:380px;
+        height:260px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 23.8px;
+    }
+}
+@media (min-width:600px) and (max-width:790px){
+    #headSP{
+        clip-path: none;
+    }
+    #headFimg{
+        display:none;
+    }
+    #headFh{
+        width:20px;
+        transform: translateX(-142px);
+    }
+    nav li{
+        width:102px;
+    }
+    .Qlista{
+        display:none;
+    }
+    nav li a{
+        padding: 0px;
+        font-size: 18px;
+    }
+    #droplista{
+        width:102px;
+    }
+    nav li:hover{
+        background-color: red;
+        border-left: 2px solid orange;
+        border-right: 2px solid orange;
+    }
+    #droplista a:hover{
+        background-color: red;
+    }
+    aside img{
+        margin: 20px 9px;
+    }
+    #asideFdiv{
+        display: none;   
+    }
+    #Socialmedia{
+        margin-top: 30px;
+    }
+    #Socialmedia img{
+        width:30px;
+        height:30px;
+    }
+    .Cimg{
+        display:none;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left: 240px;
+        top:130px;
+        width:320px;
+        height:260px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}
+@media (min-width:450px) and (max-width:599.9px){
+    #headSP{
+        width: 100%;
+        clip-path: none;
+        background-color: rgb(255, 71, 71);
+    }
+    #headFh{
+        width:10px;
+        transform: translateX(-200px);
+        font-size: 35px;
+    }
+    nav{
+        clear:both;
+        width:100%;
+        height:300px;
+        background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+    }
+    nav li{
+        width:100%;
+        height: 96px;
+        border-top: 2px solid rgb(255, 225, 225);
+    }
+    .Qlista{
+        display:none;
+    }
+    #lista{
+        display:none;
+    }
+    nav li:hover{
+        background-color: red;
+        border: 2px solid rgb(252, 196, 196);
+    }
+    aside{
+        width:25%;
+    }
+    #asideFimg{
+        display: none;
+    }
+    #asideFdiv{
+        display: none;
+    }
+    aside h1{
+        font-size: 23px;
+        padding: 80px 0px;
+    }
+    #Socialmedia{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #Socialmedia img{
+        width:30px;
+        height:30px;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left: 150px;
+        top:110px;
+        width:240px;
+        height:290px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .footPh{
+        width:100%;
+        font-size: 42px;
+        line-height: 155px;
+    }
+}
+@media (min-width:400px) and (max-width:450px){
+    #headSP{
+        width: 100%;
+        clip-path: none;
+        background-color: rgb(255, 71, 71);
+    }
+    #headFh{
+        width:10px;
+        transform: translateX(-200px);
+        font-size: 35px;
+    }
+    nav{
+        clear:both;
+        width:100%;
+        height:300px;
+        background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+    }
+    nav li{
+        width:100%;
+        height: 96px;
+        border-top: 2px solid rgb(255, 225, 225);
+    }
+    .Qlista{
+        display:none;
+    }
+    #lista{
+        display:none;
+    }
+    nav li:hover{
+        background-color: red;
+        border: 2px solid rgb(252, 196, 196);
+    }
+    aside{
+        width:25%;
+    }
+    #asideFimg{
+        display: none;
+    }
+    #asideFdiv{
+        display: none;
+    }
+    aside h1{
+        font-size: 23px;
+        padding: 80px 0px;
+    }
+    #Socialmedia{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #Socialmedia img{
+        width:30px;
+        height:30px;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left: 117px;
+        top:110px;
+        width:240px;
+        height:290px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .footPh{
+        width:100%;
+        font-size: 37px;
+        line-height: 155px;
+    }
+}
+@media (min-width:360px) and (max-width:400px){
+    #headSP{
+        width: 100%;
+        clip-path: none;
+        background-color: rgb(255, 71, 71);
+    }
+    #headFimg{
+        width:100px;
+        height:100%;
+        border-radius: 50%;
+        margin:0px 35px;
+    }
+    #headFh{
+        width:10px;
+        transform: translateX(-190px);
+        font-size: 35px;
+    }
+    nav{
+        clear:both;
+        width:100%;
+        height:300px;
+        background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+    }
+    nav li{
+        width:100%;
+        height: 96px;
+        border-top: 2px solid rgb(255, 225, 225);
+    }
+    .Qlista{
+        display:none;
+    }
+    #lista{
+        display:none;
+    }
+    nav li:hover{
+        background-color: red;
+        border: 2px solid rgb(252, 196, 196);
+    }
+    aside{
+        width:25%;
+    }
+    #asideFimg{
+        display: none;
+    }
+    #asideFdiv{
+        display: none;
+    }
+    aside h1{
+        font-size: 20px;
+        padding: 80px 0px;
+    }
+    #Socialmedia{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #Socialmedia img{
+        width:30px;
+        height:30px;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left: 103px;
+        top:110px;
+        width:207px;
+        height:280px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 13.9px;
+    }
+    .footPh{
+        width:100%;
+        font-size: 33px;
+        line-height: 155px;
+    }
+}
+@media (min-width:300px) and (max-width:360px){
+    #headSP{
+        width: 100%;
+        clip-path: none;
+        background-color: rgb(255, 71, 71);
+    }
+    #headFimg{
+        display: none;
+    }
+    #headFh{
+        width:10px;
+        transform: translateX(-230px);
+        font-size: 35px;
+    }
+    nav{
+        clear:both;
+        width:100%;
+        height:300px;
+        background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+    }
+    nav li{
+        width:100%;
+        height: 96px;
+        border-top: 2px solid rgb(255, 225, 225);
+    }
+    .Qlista{
+        display:none;
+    }
+    #lista{
+        display:none;
+    }
+    nav li:hover{
+        background-color: red;
+        border: 2px solid rgb(252, 196, 196);
+    }
+    aside{
+        width:25%;
+    }
+    #asideFimg{
+        display: none;
+    }
+    #asideFdiv{
+        display: none;
+    }
+    aside h1{
+        font-size: 15px;
+        padding: 80px 0px;
+    }
+    #Socialmedia{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #Socialmedia img{
+        width:30px;
+        height:30px;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left: 90px;
+        top:110px;
+        width:165px;
+        height: 300px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 13.9px;
+    }
+    .footPh{
+        width:100%;
+        font-size: 30px;
+        line-height: 155px;
+    }
+}
+@media (min-width:267px) and (max-width:300px){
+    #headSP{
+        width: 100%;
+        clip-path: none;
+        background-color: rgb(255, 71, 71);
+    }
+    #headFimg{
+        display:none;
+    }
+    #headFh{
+        width:10px;
+        transform: translateX(-210px);
+        font-size: 40px;
+    }
+    nav{
+        clear:both;
+        width:100%;
+        height:300px;
+        background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+    }
+    nav li{
+        width:100%;
+        height: 96px;
+        border-top: 2px solid rgb(255, 225, 225);
+    }
+    .Qlista{
+        display:none;
+    }
+    #lista{
+        display:none;
+    }
+    nav li:hover{
+        background-color: red;
+        border: 2px solid rgb(252, 196, 196);
+    }
+    aside{
+        width:19%;
+    }
+    #asideFimg{
+        display: none;
+    }
+    #asideFdiv{
+        display: none;
+    }
+    aside h1{
+        font-size: 10px;
+        padding: 80px 0px;
+    }
+    #Socialmedia{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    #Socialmedia img{
+        width:30px;
+        height:30px;
+    }
+    #Socialmedia img:hover{
+        width:42px;
+        height:42px;
+    }
+    main article{
+        left: 75px;
+        top: 60px;
+        width:155px;
+        height:395px;
+    }
+    article h1{
+        text-align: center;
+        padding:20px 4px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 19px;
+    }
+    .footPh{
+        width:100%;
+        font-size: 22px;
+        line-height: 155px;
+    }
+}
+@media (max-width:267px){
+    #headSP{
+        width: 100%;
+        clip-path: none;
+        background-color: rgb(255, 71, 71);
+    }
+    #headFimg{
+        display:none;
+    }
+    #headFh{
+        width:10px;
+        transform: translateX(-210px);
+        font-size: 40px;
+    }
+    nav{
+        clear:both;
+        width:100%;
+        height:300px;
+        background-image: linear-gradient(to left, rgb(126, 126, 126), rgb(194, 194, 194));
+    }
+    nav li{
+        width:100%;
+        height: 96px;
+        border-top: 2px solid rgb(255, 225, 225);
+    }
+    .Qlista{
+        display:none;
+    }
+    #lista{
+        display:none;
+    }
+    nav li:hover{
+        background-color: red;
+        border: 2px solid rgb(252, 196, 196);
+    }
+    aside{
+        display:none;
+    }
+    main article{
+        left: 0px;
+        top: 60px;
+        width:155px;
+        height:395px;
+    }
+    article h1{
+        text-align: center;
+        padding:20px 4px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    article p{
+        margin-top: 15px;
+        font-size: 19px;
+    }
+    .footPh{
+        width:100%;
+        font-size: 10px;
+        line-height: 155px;
+    }
+}
+@media (min-width:1700px){
+    .Ph2{
+        width:140px;
+        left:200px;
+    }
+    main article{
+        left: 800px;
+        width:500px;
+    }
+}
